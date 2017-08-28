@@ -1,13 +1,13 @@
 # Required variables:
-#	nodes_os - operating system (centos7, trusty, xenial)
-#	node_hostname - hostname of this node (mynode)
-#	node_domain - domainname of this node (mydomain)
-#	node_cluster - clustername, used to classify this node (virtual_mcp11_k8s)
-#	config_host - IP/hostname of salt-master (192.168.0.1)
+# nodes_os - operating system (centos7, trusty, xenial)
+# node_hostname - hostname of this node (mynode)
+# node_domain - domainname of this node (mydomain)
+# node_cluster - clustername, used to classify this node (virtual_mcp11_k8s)
+# config_host - IP/hostname of salt-master (192.168.0.1)
 #
-#	private_key - SSH private key, used to clone reclass model
-#	reclass_address - address of reclass model (https://github.com/user/repo.git)
-#	reclass_branch - branch of reclass model (master)
+# private_key - SSH private key, used to clone reclass model
+# reclass_address - address of reclass model (https://github.com/user/repo.git)
+# reclass_branch - branch of reclass model (master)
 
 echo "Installing salt master ..."
 aptget_wrapper install -y reclass git
